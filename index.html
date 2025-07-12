@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Length Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Length Converter</h1>
+
+    <div class="converter">
+      <input type="number" id="inputValue" placeholder="Enter value" />
+      
+      <div class="unit-selectors">
+        <select id="fromUnit">
+          <option value="mm">Millimeter</option>
+          <option value="cm">Centimeter</option>
+          <option value="m">Meter</option>
+          <option value="km">Kilometer</option>
+          <option value="in">Inch</option>
+          <option value="ft">Foot</option>
+          <option value="yd">Yard</option>
+          <option value="mi">Mile</option>
+        </select>
+
+        <span>to</span>
+
+        <select id="toUnit">
+          <option value="mm">Millimeter</option>
+          <option value="cm">Centimeter</option>
+          <option value="m">Meter</option>
+          <option value="km">Kilometer</option>
+          <option value="in">Inch</option>
+          <option value="ft">Foot</option>
+          <option value="yd">Yard</option>
+          <option value="mi">Mile</option>
+        </select>
+      </div>
+
+      <div class="result" id="result">Result: </div>
+
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <div class="history">
+      <h2>Conversion History</h2>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
